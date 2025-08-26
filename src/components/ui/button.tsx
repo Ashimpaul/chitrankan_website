@@ -9,17 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant hover:shadow-artistic transition-all duration-300",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-elegant transition-all duration-300",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground backdrop-blur-sm transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        artistic: "bg-gradient-artistic text-primary-foreground shadow-artistic hover:shadow-elegant transition-all duration-300 transform hover:scale-105",
-        elegant: "bg-secondary text-secondary-foreground border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 transition-all duration-300",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-elegant hover:shadow-artistic transition-all duration-300",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-all duration-300",
+        link: "text-primary underline-offset-4 hover:underline transition-all duration-300",
+        artistic: "bg-gradient-artistic text-primary-foreground shadow-artistic hover:shadow-glow transition-all duration-500 transform hover:scale-105 backdrop-blur-sm",
+        elegant: "bg-gradient-glass text-foreground border border-border/50 hover:border-primary/50 shadow-glass hover:shadow-elegant transition-all duration-400 backdrop-blur-sm",
+        modern: "bg-background/80 text-foreground border border-primary/20 hover:border-primary/60 shadow-glass hover:shadow-artistic transition-all duration-400 backdrop-blur-md hover:bg-background/90",
       },
       size: {
         default: "h-10 px-4 py-2",
