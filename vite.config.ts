@@ -8,9 +8,10 @@ export default defineConfig(async ({ mode }) => {
 
   // Only load lovable-tagger in development
   if (mode === "development") {
-    const { componentTagger } = await import("lovable-tagger");
-    plugins.push(componentTagger());
-  }
+  const mod: any = await import("lovable-tagger");
+  plugins.push(mod.componentTagger());
+}
+
 
   return {
     base: mode === "production" ? "/chitrankan_website/" : "/",
