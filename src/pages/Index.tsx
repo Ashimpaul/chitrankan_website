@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Updates from "@/components/Updates";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ActivityCarousel from "@/components/ActivityCarousel";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <ActivityCarousel />
         <Gallery />
         <About />
         <Services />
